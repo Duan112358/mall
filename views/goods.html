@@ -1,0 +1,16 @@
+<div class="container margin-top">
+    <div class="category-item">
+        <div class="ih-item square effect3 bottom_to_top col-md-2 col-sm-4" ng-repeat="store in dataRows">
+            <a href="#">
+                <div class="img">
+                    <img ng-src="{{store.avatar}}" alt="store img" class="good-img">
+                </div>
+                <div class="info">
+                    <h4 ng-bind="store.name"></h4>
+                    <p ><span ng-bind="store.prize"></span>&nbsp; ¥</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="center-block" pagination p-total="totalRecords" p-size="pageSize" on-init="init()" on-paginate="paginate(page, start, end)"></div>
+</div>

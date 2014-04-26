@@ -1,0 +1,248 @@
+.logo {
+    position: relative;
+}
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 100;
+    text-align: center;
+}
+.container {
+    clear: both;
+    overflow: hidden;
+}
+.navbar-active {
+    background-image: url("../img/dianji.png") !important;
+    height: 44px;
+}
+.navbar {
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    border-radius: 0;
+}
+.navbar-nav li {
+    height:45px;
+    border-left: solid 1px #ffffff;
+    width: 130px;
+    text-align: center;
+}
+.navbar-nav li a:hover {
+    background-image: url("../img/dianji.png") !important;
+    height: 44px;
+    color: #ffffff;
+}
+.navbar-nav li:nth-child(3n) {
+    border-right: solid 1px #ffffff;
+}
+.navbar-nav li img {
+    margin-top: -3px;
+    margin-right: 5px;
+}
+.navbar.fixed-top {
+    margin-top:0;
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    top: 0;
+    z-index: 10;
+}
+.good-img {
+    display: block;
+    width:100%;
+}
+.category-item {
+    clear: both;
+    overflow: hidden;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+.category {
+    color: #fd778e;
+    border-bottom: solid 2px #fd778e;
+    margin: 10px 5px;
+}
+.margin-bottom {
+    margin-bottom: 10px;
+}
+.margin-top {
+    margin-top: 20px;
+}
+.carousel-img {
+    width:100%;
+    height: 417px;
+}
+.carousel.slide, .preview {
+    padding: 0;
+}
+.carousel-banner {
+    background-image: linear-gradient(to top, #d2e1e8, #d8e9f9);
+    z-index: 100;
+}
+.text-center {
+    text-align: center;
+}
+.about {
+    bottom: 20px;
+    text-align: center;
+}
+.about a {
+    text-align: center;
+    text-decoration: none;
+    line-height: 20px;
+    margin: 0 10px;
+}
+.ih-item.square {
+    position: relative;
+    margin-bottom: 10px;
+}
+.ih-item.square .info {
+    position: absolute;
+    height: 30%;
+    bottom: 0;
+    left: 5px;
+    right: 5px;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.ih-item.square.effect3 {
+    overflow: hidden;
+    height: 234px;
+}
+.ih-item.square.effect3 .info {
+    background: #333333;
+    opacity: 0;
+}
+.ih-item.square.effect3 .info h4 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 4px;
+}
+.ih-item.square.effect3 .info p {
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.ih-item.square.effect3 a:hover .info {
+    visibility: visible;
+    opacity: .7;
+}
+.pagination {
+    padding-left: 1px;
+    display: block;
+    margin: 0 auto;
+    height: 35px;
+}
+.pagination > li {
+    display: inline;
+}
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #fd5673;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #fd5673;
+}
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+    color: #2a6496;
+    background-color: #eee;
+    border-color: #ddd;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #fd5673;
+    border-color: #fd5673;
+}
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+    color: #999;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd;
+}
+/***
+*** Spinner Animation
+***/
+ .spinner {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: calc(50% - 20px);
+    left: 50%;
+    margin: auto;
+}
+.double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #555;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: bounce 2.0s infinite ease-in-out;
+    animation: bounce 2.0s infinite ease-in-out;
+}
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+@-webkit-keyframes bounce {
+    0%, 100% {
+        -webkit-transform: scale(0.0)
+    }
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}

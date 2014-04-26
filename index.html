@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="mallApp">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" href="http://bcs.duapp.com/qmmwp0/blog/201309/favicon.ico" type="image/x-icon">
+    <title>钱方会员</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body ng-controller="MainCtrl">
+    <div class="navbar navbar-default" role="navigation">
+        <img src="img/logo.png" alt="logo" class="logo">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/" class="{{getClass(false)}}">
+                        <img src="img/icon-1.png" alt="">
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/fuzhuang" class="{{getClass('fuzhuang')}}">
+                        <img src="img/icon-2.png" alt="">
+                        <span>服装</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/caizhuang" class="{{getClass('caizhuang')}}">
+                        <img src="img/icon-3.png" alt="">
+                        <span>护肤彩妆</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav pull-right">
+                <li>
+                    <a href="/xiebao" class="{{getClass('xiebao')}}">
+                        <img src="img/icon-4.png" alt="">
+                        <span>鞋包</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/peishi" class="{{getClass('peishi')}}">
+                        <img src="img/icon-5.png" alt="">
+                        <span>配饰</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/other" class="{{getClass('other')}}">
+                        <img src="img/icon-6.png" alt="">
+                        <span>其他</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div ng-view ng-hide="loading" class="animated fadeIn"></div>
+
+    <div class="spinner" ng-show="loading">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+    </div>
+    <footer class="container">
+        <p class="about">
+            <a href="http://www.qfpay.com/about/" target="_blank">关于钱方</a>
+            <a href="http://www.qfpay.com/agreement" target="_blank">用户条款</a>
+            <a href="http://www.qfpay.com/about/#contactus" target="_blank">联系我们</a>
+            <a href="javascript:void(0);">意见反馈</a>
+            <a href="http://weibo.com/qfpay" target="_blank">官方微博</a>
+        </p>
+        <p class="text-center">Copyright © 2011-2013 北京钱方银通科技有限公司 京ICP证11044451号</p>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

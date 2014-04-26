@@ -1,0 +1,65 @@
+<div class="carousel-banner">
+    <div class="container">
+        <div id="carousel-generic" class="carousel slide col-md-10" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-generic" data-slide-to="{{$index}}" ng-class="{'active':$first}" ng-repeat="item in carousel"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item" ng-class="{'active':$first}" ng-repeat="item in carousel">
+                    <div>
+                        <img ng-src="{{item.url}}" class="carousel-img" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 preview">
+            <img src="img/banner-1.jpg" alt="">
+            <img src="img/banner-2.jpg" alt="">
+            <img src="img/banner-3.jpg" alt="">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="category-item">
+        <p class="category">服饰内衣</p>
+        <div class="ih-item square effect3 bottom_to_top col-md-2 col-sm-4" ng-repeat="store in stores">
+            <a href="#">
+                <div class="img">
+                    <img ng-src="{{store.avatar}}" alt="store img" class="good-img">
+                </div>
+                <div class="info">
+                    <h4 ng-bind="store.name"></h4>
+                    <p ng-bind="store.weixin"></p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="category-item">
+        <p class="category">鞋包</p>
+        <div class="ih-item square effect3 bottom_to_top col-md-2 col-sm-4" ng-repeat="store in stores">
+            <a href="#">
+                <div class="img">
+                    <img ng-src="{{store.avatar}}" alt="store img" class="good-img">
+                </div>
+                <div class="info">
+                    <h4 ng-bind="store.name"></h4>
+                    <p ng-bind="store.weixin"></p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="category-item">
+        <p class="category">护肤彩妆</p>
+        <div class="ih-item square effect3 bottom_to_top col-md-2 col-sm-4" ng-repeat="store in stores">
+            <a href="#">
+                <div class="img">
+                    <img ng-src="{{store.avatar}}" alt="store img" class="good-img">
+                </div>
+                <div class="info">
+                    <h4 ng-bind="store.name"></h4>
+                    <p ng-bind="store.weixin"></p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
